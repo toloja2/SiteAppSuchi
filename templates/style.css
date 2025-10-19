@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5EFEF;
+}
+
+form{
+    color: white;
+    background-color: rgba(200, 175, 135, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin:6% 10%;
+    border-radius: 20px;
+    padding: 10%;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    color: white;
+    font-weight: 500;
+}
+
+::placeholder{
+    color: white;
+    letter-spacing: 0.3px;
+}
+
+input[type='submit']{
+    background-color:#3A2887;
+    box-shadow: 0 10px 4px #261A1A;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+span{
+   color: #3A2887;
+   font-weight: bold;
+
+}
+
+
+
+@media screen and (max-width:400px){
+   #connexion>form>h1,#connexion>form>span{
+    font-size: 15px;
+   }
+   #connexion>form>p{
+    font-size: 15px;
+   }
+    
+}
+@media screen and (max-width:295px){
+   #connexion>form>h1,#connexion>form>span{
+    font-size: 10px;
+   }
+   #connexion>form>p{
+    font-size: 10px;
+   }
+   #connexion>form>input[type='submit']{
+    padding: 3px;
+    letter-spacing: 0;
+    font-size: 10px;
+    box-shadow: 0 5px 2px #261A1A;
+   }
+    
+}
