@@ -1,4 +1,14 @@
-// Bares caché
+// SAVOIR POURQUOI
+const savoir = document.getElementById('savoir');
+savoir.addEventListener("click", (e) => {
+    setTimeout(() => {
+        e.target.parentElement.textContent = `Car il est très important pour valider votre commande.
+         Alors remplir les correctement. Merci pour votre compréhension.`
+    }, 300)
+})
+
+
+// NavBar caché
 const offcave = document.getElementById("offcave");
 const listes = document.querySelector(".listes");
 
@@ -30,21 +40,6 @@ voirMoins.addEventListener("click", (e) => {
 const main = document.getElementById("main");
 const service = document.getElementById("service");
 const commandeForm = document.getElementById('commandeForm');
-
-// RECUPERATION DES DONNES
-
-const connexion = document.getElementById("connexion");
-connexion.addEventListener("submit", () => {
-    localStorage.setItem("nom",document.getElementById("nom").value);
-    localStorage.setItem("numeroTel",document.getElementById("numeroTel").value);
-    window.location.href = "https://toloja2.github.io/SiteAppSuchi/templates/index.html";
-
-})
-
-const nomPerso = document.getElementById("nomPerso");
-nomPerso.value = localStorage.getItem("nom");
-const numeroTelPerso = document.getElementById("numeroTelPerso");
-numeroTelPerso.value = localStorage.getItem("numeroTel");
 
 
 main.addEventListener("click", (e) => {
