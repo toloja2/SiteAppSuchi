@@ -1,13 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITEAPPSUCHI</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>PAGE SITEAPPSUCHI</p>
+    <header id="acceuil">
+        <p></p>
+        <nav>
+            <img src="../Medias/logo.png" alt="logo" id="logo">
+            <ul class="listes">
+                <li><a href="#acceuil">Acceuil</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="deconnexion"><a href="https://toloja2.github.io/SiteAppSuchi">DECONNEXION</a></button>
+                </li>
+            </ul>
+            <div id="offcave">X</div>
+        </nav>
+        <div id="titre">
+            <h1>Titre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis illum sunt perferendis odio eum saepe
+                consequatur reprehenderit magni in odit.
+            </p>
+            <button><a href="">SAVOIR PLUS</a></button>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div id="main">
+            <div class="cards" id="service">
+                <section>
+                    <div class="imageCard" id="card1">
+
+                    </div>
+
+                    <h1>SUCHI 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut
+                        modi
+                        ad.
+                    </p>
+                    <p>Prix : <span> 10 000 </span> Ariary</p>
+                    <button class="bouttonCommander">COMMANDER</button>
+                </section>
+                <section>
+                    <div class="imageCard" id="card2">
+
+                    </div>
+
+                    <h1>SUCHI 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut
+                        modi
+                        ad.
+                    </p>
+                    <p>Prix : <span> 20 000 </span> Ariary</p>
+                    <button class="bouttonCommander">COMMANDER</button>
+                </section>
+                <section>
+                    <div class="imageCard" id="card3">
+
+                    </div>
+
+                    <h1>SUCHI 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut
+                        modi
+                        ad.
+                    </p>
+                    <p>Prix : <span> 30 000 </span> Ariary</p>
+                    <button class="bouttonCommander">COMMANDER</button>
+                </section>
+                <section>
+                    <div class="imageCard" id="card4">
+
+                    </div>
+
+                    <h1>SUCHI 4</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut
+                        modi
+                        ad.
+                    </p>
+                    <p>Prix : <span> 40 000</span> Ariary</p>
+                    <button class="bouttonCommander">COMMANDER</button>
+                </section>
+            </div>
+
+            <!-- CONTACT -->
+            <div id="contact">
+                <form action="https://formsubmit.co/tolojaranarijaonina@gmail.com" method="POST">
+                    <h1>CONTACTEZ - NOUS</h1>
+                    <input class="input" type="text" name="name" placeholder="Entrer votre nom" required>
+                    <textarea name="message" class="input" placeholder="Votre message"></textarea>
+                    <button id="contact" type="submit">ENVOYÉ</button>
+                    <input type="hidden" name="_subject" value="Nouveau CONTACT">
+                    <input type="hidden" name="_template" value="basic">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next"
+                        value="https://toloja2.github.io/SiteAppSuchi/templates/index.html">
+
+                </form>
+            </div>
+
+        </div>
+    
+        <!-- COMMANDE-->
+        <div id="commandeForm">
+
+            <form action="https://formsubmit.co/tolojaranarijaonina@gmail.com" method="POST">
+                <a id="voirAutreCommande">VOIR AUTRE COMMANDE</a>
+                <div id="payement">
+                    <p style="color: black;">Envoyé <span id="prixEnvoye"></span> Ar prix de <span
+                            id="nomCommande"></span> à
+                        <strong style="color:white;">034 20 727 60 (RANARIJAONINA Tolojanahary)</strong> OU
+                        <strong style="color:white;">033 25 096 07 (RANARIJAONINA Tolojanahary)</strong>,
+                        copiez le <strong style="color:white;">REFERENCE</strong> et mettre au champ réference.
+                    </p>
+                </div>
+                <h1>VOTRE COMMANDE</h1>
+                <input class="input" type="text" name="name" placeholder="Entrer votre nom" autofocus required>
+                <input class="input" type="text" name="réference" placeholder="Réference" required>
+                <input class="input" type="tel" name="phone" placeholder="Numero Tél" required>
+                <button type="submit">ENVOYÉ</button>
+                <input type="hidden" name="_subject" value="Nouveau COMMANDE">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://toloja2.github.io/SiteAppSuchi/templates/index.html">
+
+            </form>
+        </div>
+        
+    </main>
     <script src="main.js"></script>
 </body>
+
 </html>
