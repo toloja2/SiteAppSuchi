@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITEAPPSUCHI</title>
     <link rel="stylesheet" href="https://toloja2.github.io/SiteAppSuchi/templates/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -27,10 +28,10 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis illum sunt perferendis odio eum saepe
                 consequatur reprehenderit magni in odit.
             </p>
-            <button><a href="">SAVOIR PLUS</a></button>
+            <button class="voirPlus">VOIR PLUS</button>
+            <button class="voirMoins" style="display: none;">VOIR MOINS</button>
 
         </div>
-
     </header>
 
     <main>
@@ -107,7 +108,7 @@
             </div>
 
         </div>
-    
+
         <!-- COMMANDE-->
         <div id="commandeForm">
 
@@ -122,9 +123,9 @@
                     </p>
                 </div>
                 <h1>VOTRE COMMANDE</h1>
-                <input class="input" type="text" name="name" placeholder="Entrer votre nom" autofocus required>
-                <input class="input" type="text" name="réference" placeholder="Réference" required>
-                <input class="input" type="tel" name="phone" placeholder="Numero Tél" required>
+                <input  id="nomPerso" class="input" type="text" name="name" placeholder="Entrer votre nom" required>
+                <input id="numeroTelPerso" class="input" type="tel" name="phone" placeholder="Numero Tél"  required>
+                <input class="input" type="text" name="réference" placeholder="Réference"autofocus required>
                 <button type="submit">ENVOYÉ</button>
                 <input type="hidden" name="_subject" value="Nouveau COMMANDE">
                 <input type="hidden" name="_template" value="table">
@@ -133,9 +134,26 @@
 
             </form>
         </div>
-        
+
     </main>
+    <footer>
+        <a href="#acceuil"><img src="../Medias/logo.png" alt="logo" class="img"></a>
+        <ul>
+            <li>©2025 Toloja </li>|
+            <li>Tous droits réservés </li>|
+        </ul>
+        <ul>
+            <li><a href="#service">Service</a></li>|
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul>
+            <li>Mention légale </li>|
+            <li>Conditions générales</li>
+        </ul>
+    </footer>
     <script src="https://toloja2.github.io/SiteAppSuchi/templates/main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 
 </html>

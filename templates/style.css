@@ -6,6 +6,7 @@
 
 body {
     background-color: #F5EFEF;
+    font-family: 'Times New Roman', Times, sans-serif;
 }
 
 form {
@@ -41,7 +42,8 @@ h1 {
     letter-spacing: 0.3px;
 }
 
-button,#voirAutreCommande{
+button,
+#voirAutreCommande {
     background-color: #3A2887;
     box-shadow: 0 6px 4px #261A1A;
     color: white;
@@ -93,10 +95,9 @@ nav {
     top: 0;
     gap: 0%;
     color: white;
-    background-color: rgba(142, 117, 109, 1);
+    background-color: rgba(142, 117, 109, 0.95);
     position: fixed;
     z-index: 10;
-    backdrop-filter: blur(5px);
 }
 
 #logo {
@@ -110,7 +111,6 @@ nav>ul {
     align-items: center;
     list-style: none;
     width: 60%;
-    backdrop-filter: blur(5px);
 
 }
 
@@ -208,6 +208,33 @@ section:hover {
 }
 
 
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(142, 117, 109, 0.95);
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 80%;
+    gap: 2%;
+}
+
+.img{
+    height: 41px;
+    width: 80px;
+}
+
 /* repsonsive web connexion */
 
 @media screen and (max-width:400px) {
@@ -238,7 +265,8 @@ section:hover {
         font-size: 10px;
     }
 
-    form>button,#voirAutreCommande{
+    form>button,
+    #voirAutreCommande {
         padding: 3px;
         letter-spacing: 0;
         font-size: 10px;
@@ -254,6 +282,10 @@ section:hover {
     #titre button {
         font-size: 8px;
         box-shadow: 0 3px 2px #261A1A;
+    }
+
+    footer>ul>li{
+        font-size: 11px;
     }
 
 }
@@ -313,4 +345,9 @@ section:hover {
         min-width: 50%;
         margin: 20px auto;
     }
+
+    footer {
+        font-size: 15px;
+    }
+
 }
