@@ -1,4 +1,3 @@
-
 // NavBar caché
 const offcave = document.getElementById("offcave");
 const listes = document.querySelector(".listes");
@@ -62,8 +61,15 @@ main.addEventListener("click", (e) => {
         const prix = parent.querySelector("span");
         const prixEnvoye = document.getElementById("prixEnvoye");
         const nomCommande = document.getElementById("nomCommande");
+        const nomCommandeEnvoye = document.getElementById("nomCommandeEnvoye");
+        const prixCommandeEnvoye = document.getElementById("prixCommandeEnvoye");
+        const autoFocus = document.getElementById("autoFocus");
+        autoFocus.select();
         prixEnvoye.textContent = prix.textContent;
         nomCommande.textContent = typeSuchi.textContent;
+        console.log(nomCommande.textContent);
+        nomCommandeEnvoye.value = nomCommande.textContent;
+        prixCommandeEnvoye.value = prixEnvoye.textContent +'AR';
         commandeForm.style.display = "flex";
         main.style.display = "none";
     }
