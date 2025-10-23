@@ -1,20 +1,30 @@
-// SAVOIR POURQUOI
-const savoir = document.getElementById('savoir');
-savoir.addEventListener("click", (e) => {
-    setTimeout(() => {
-        e.target.parentElement.textContent = `Car il est très important pour valider votre commande.
-         Alors remplir les correctement. Merci pour votre compréhension.`
-    }, 300)
-})
-
 
 // NavBar caché
 const offcave = document.getElementById("offcave");
 const listes = document.querySelector(".listes");
 
 offcave.addEventListener('click', () => {
-    listes.classList.toggle("menu-list")
+    listes.classList.toggle("menu-list");
+    offcave.firstChild.classList.toggle("fa-close")
+    document.addEventListener("click", (e) => {
+        if (!offcave.contains(e.target)) {
+            listes.classList.remove("menu-list");
+            offcave.firstChild.classList.replace("fa-close", "fa-bars")
+        }
+    })
 })
+
+// SCROLL VERS AUTRE CHOSES
+function vers(id, type) {
+    const element = document.getElementById(id)
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: type
+        })
+    }
+}
+
 
 //VOIR PLUS/MOINS
 const voirPlus = document.querySelector(".voirPlus");
@@ -26,6 +36,7 @@ Repellendus laudantium ipsa aperiam iure nulla, deserunt dolor harum, nesciunt a
 Deleniti ipsum non pariatur sunt magnam, nulla quo aspernatur!` ;
     voirPlus.style.display = "none";
     voirMoins.style.display = "block";
+    if (window.innerWidth <= 450) { e.target.parentElement.style.top = "10%"; }
 })
 
 
@@ -34,6 +45,7 @@ voirMoins.addEventListener("click", (e) => {
                 consequatur reprehenderit magni in odit.`;
     voirPlus.style.display = "block";
     voirMoins.style.display = "none";
+    if (window.innerWidth <= 450) { e.target.parentElement.style.top = "20%"; }
 })
 
 // BOUTTON COMMANDE

@@ -54,6 +54,7 @@ button,
     text-align: center;
     letter-spacing: 1.5px;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 button:hover {
@@ -114,11 +115,22 @@ nav>ul {
 
 }
 
-a {
+a,
+nav>ul>li {
     text-decoration: none;
     color: white;
     font: bolder;
     cursor: pointer;
+
+}
+
+nav>ul>li {
+
+    transition: 0.3s ease-in-out;
+}
+
+nav>ul>li:hover {
+    transform: translateY(-3px);
 
 }
 
@@ -197,6 +209,10 @@ section:hover {
     display: none;
 }
 
+#offcave i {
+    color: #3A2887;
+}
+
 /* PAYMENT*/
 #payement {
     width: 100%;
@@ -221,6 +237,35 @@ footer {
     background-color: rgba(142, 117, 109, 0.95);
 }
 
+footer li {
+
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.socialMedias {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgba(142, 117, 109, 0.7);
+}
+
+i {
+    color: blue;
+    margin: 5px;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+
+}
+
+i:hover {
+    transform: scale(1.5);
+}
+
 footer ul {
     display: flex;
     align-items: center;
@@ -230,9 +275,10 @@ footer ul {
     gap: 2%;
 }
 
-.img{
+.img {
     height: 41px;
     width: 80px;
+    transition: 0.4s ease-in-out;
 }
 
 /* repsonsive web connexion */
@@ -284,7 +330,11 @@ footer ul {
         box-shadow: 0 3px 2px #261A1A;
     }
 
-    footer>ul>li{
+    .top {
+        top: 20%;
+    }
+
+    footer>ul>li {
         font-size: 11px;
     }
 
@@ -318,6 +368,10 @@ footer ul {
 }
 
 @media screen and (max-width:450px) {
+    #titre {
+        top: 20%;
+    }
+
     .listes {
         position: absolute;
         align-items: center;

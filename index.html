@@ -15,7 +15,8 @@
             <input class="input" type="text" name="name" placeholder="Entrer votre nom" autofocus required>
             <input class="input" type="tel" name="phone" placeholder="Numero Tél" minlength="9" required>
             <button id="connexion" type="submit">VOIR PAGE</button>
-            <p style=" transition: 2s ease-in-out;">Pourquoi je dois remplir ça? <span id="savoir" style="cursor: pointer;">SAVOIR</span></p>
+            <p style=" transition: 2s ease-in-out;">Pourquoi je dois remplir ça? <span id="savoir"
+                    style="cursor: pointer;">SAVOIR</span></p>
 
             <input type="hidden" name="_subject" value="Nouveau CONNEXION">
             <input type="hidden" name="_template" value="box">
@@ -24,7 +25,16 @@
 
         </form>
     </div>
-    <script src="./templates/main.js"></script>
+    <script>
+        // SAVOIR POURQUOI
+        const savoir = document.getElementById('savoir');
+        savoir.addEventListener("click", (e) => {
+            setTimeout(() => {
+                e.target.parentElement.textContent = `Car il est très important pour valider votre commande.
+         Alors remplir les correctement. Merci pour votre compréhension.`
+            }, 300)
+        })
+    </script>
 </body>
 
 </html>
