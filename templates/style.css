@@ -246,12 +246,17 @@ footer li {
 .socialMedias {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
     justify-items: center;
     align-items: center;
     border-radius: 6px;
     padding: 5px;
     background-color: rgba(142, 117, 109, 0.7);
+}
+
+.socialMedias div{
+    display: flex;
+    gap: 10%;
 }
 
 i {
