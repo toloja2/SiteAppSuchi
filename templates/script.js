@@ -1,3 +1,4 @@
+
 // NavBar caché
 const offcave = document.getElementById("offcave");
 const listes = document.querySelector(".listes");
@@ -47,10 +48,56 @@ voirMoins.addEventListener("click", (e) => {
     if (window.innerWidth <= 450) { e.target.parentElement.style.top = "20%"; }
 })
 
+
 // BOUTTON COMMANDE
 const main = document.getElementById("main");
 const service = document.getElementById("service");
 const commandeForm = document.getElementById('commandeForm');
+
+// FONCTIONS AJOUT PRODIT
+function ajoutProduit(imageProduit, titreProduit, descriptionProduit, prixProduit) {
+    const section = document.createElement('section');
+    const div = document.createElement('div');
+    div.classList.add("imageCard");
+    div.style.background = `url(../Medias/${imageProduit}) center/cover no-repeat`;
+    const titre = document.createElement("h1");
+    titre.textContent = titreProduit.toUpperCase();
+    const desctiption = document.createElement('p');
+    desctiption.textContent = descriptionProduit;
+    const prixProduitContent = document.createElement("p");
+    prixProduitContent.innerHTML = `Prix : <span> ${prixProduit} </span> Ariary`;
+    const btn = document.createElement('button');
+    btn.classList.add("bouttonCommander");
+    btn.textContent = "COMMANDER";
+    section.appendChild(div);
+    section.appendChild(titre);
+    section.appendChild(prixProduitContent);
+    section.appendChild(btn);
+    service.appendChild(section);
+}
+const produit1 = ajoutProduit("image1.jpeg", "Suchi 1",
+    `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
+                         "15000");
+const produit2 = ajoutProduit("image2.jpg", "Suchi 2",
+    `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
+                         "15000");
+const produit3 = ajoutProduit("image3.jpeg", "Suchi 3",
+    `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
+                         "15000");
+const produit4 = ajoutProduit("image4.jpeg", "Suchi 4",
+    `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
+                         "15000");
+const produit5 = ajoutProduit("image5.jpeg", "Suchi 5",
+    `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
+                         "15000");
+const produit6 = ajoutProduit("image6.jpeg", "Suchi 6",
+    `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
+                         "15000");
+const produit7 = ajoutProduit("image7.jpeg", "Suchi 7",
+    `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
+                         "15000");
+
+
 
 
 main.addEventListener("click", (e) => {
@@ -69,7 +116,7 @@ main.addEventListener("click", (e) => {
         nomCommande.textContent = typeSuchi.textContent;
         console.log(nomCommande.textContent);
         nomCommandeEnvoye.value = nomCommande.textContent;
-        prixCommandeEnvoye.value = prixEnvoye.textContent +'AR';
+        prixCommandeEnvoye.value = prixEnvoye.textContent + 'AR';
         commandeForm.style.display = "flex";
         main.style.display = "none";
     }

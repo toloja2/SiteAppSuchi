@@ -58,7 +58,7 @@ button,
 }
 
 button:hover {
-    transform: translateY(3%);
+    transform: translateY(4%);
 }
 
 span {
@@ -130,7 +130,8 @@ nav>ul>li {
 }
 
 nav>ul>li:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    color: #ff0c2d;
 
 }
 
@@ -166,44 +167,44 @@ nav>ul>li:hover {
 section {
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
     gap: 10px;
     min-width: 20%;
     flex: 1;
-    justify-items: center;
-    align-items: center;
-    margin: 20px auto;
+    margin: 10px 20px;
     padding: 10px 5px;
     border: 1px solid black;
     border-radius: 10px;
+    transition: 1.2s ease-in-out;
+    background-color:  #a391918a;
 }
 
 section:hover {
-    border: 2px solid #3A2887;
+    animation: sectionAnimation 1.3s ease-in-out 1;
+}
+
+@keyframes sectionAnimation {
+    from {
+        border: 2px solid #3A2887;
+        background-color: #a5dfc450;
+    }
+
+    to {
+        border: 2px solid #eb0e19;
+        transform: rotateY(360deg);
+    }
+
 }
 
 .imageCard {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border: 1px solid black;
     border-radius: 50%;
     box-shadow: 0 5px 5px black;
 }
 
-#card1 {
-    background: url(../Medias/image1.jpeg) center/cover no-repeat;
-}
-
-#card2 {
-    background: url(../Medias/image2.jpg) center/cover no-repeat;
-}
-
-#card3 {
-    background: url(../Medias/image3.jpeg) center/cover no-repeat;
-}
-
-#card4 {
-    background: url(../Medias/image4.jpeg) center/cover no-repeat;
-}
 
 #commandeForm {
     display: none;
@@ -254,9 +255,14 @@ footer li {
     background-color: rgba(142, 117, 109, 0.7);
 }
 
-.socialMedias div{
+.socialMedias div {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10%;
+    width: 100%;
+    
+
 }
 
 i {
@@ -354,6 +360,9 @@ footer ul {
 }
 
 @media screen and (max-width:730px) {
+    main{
+        padding: 10px;
+    }
     section {
         min-width: 30%;
         margin: 20px 10px;
@@ -372,7 +381,14 @@ footer ul {
 
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:475px) {
+    main{
+        padding: 0 30px;
+    }
+    section {
+        margin: 10px;
+    }
+
     #titre {
         top: 20%;
     }
