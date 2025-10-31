@@ -80,22 +80,22 @@ const produit1 = ajoutProduit("image1.jpeg", "Suchi 1",
                          "15000");
 const produit2 = ajoutProduit("image2.jpg", "Suchi 2",
     `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
-                         "15000");
+                         "25000");
 const produit3 = ajoutProduit("image3.jpeg", "Suchi 3",
     `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
-                         "15000");
+                         "35000");
 const produit4 = ajoutProduit("image4.jpeg", "Suchi 4",
     `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
-                         "15000");
+                         "45000");
 const produit5 = ajoutProduit("image5.jpeg", "Suchi 5",
     `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
-                         "15000");
+                         "55000");
 const produit6 = ajoutProduit("image6.jpeg", "Suchi 6",
     `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
-                         "15000");
+                         "65000");
 const produit7 = ajoutProduit("image7.jpeg", "Suchi 7",
     `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium voluptatem dicta aut modi ad.`,
-                         "15000");
+                         "105000");
 
 
 
