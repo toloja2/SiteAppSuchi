@@ -59,7 +59,7 @@ function ajoutProduit(imageProduit, titreProduit, descriptionProduit, prixProdui
     const section = document.createElement('section');
     const div = document.createElement('div');
     div.classList.add("imageCard");
-    div.style.background = `url(../Medias/${imageProduit}) center/cover no-repeat`;
+    div.style.background = `url(./Medias/${imageProduit}) center/cover no-repeat`;
     const titre = document.createElement("h1");
     titre.textContent = titreProduit.toUpperCase();
     const desctiption = document.createElement('p');
@@ -71,6 +71,7 @@ function ajoutProduit(imageProduit, titreProduit, descriptionProduit, prixProdui
     btn.textContent = "COMMANDER";
     section.appendChild(div);
     section.appendChild(titre);
+    section.appendChild(desciptionProduit);
     section.appendChild(prixProduitContent);
     section.appendChild(btn);
     service.appendChild(section);
@@ -114,7 +115,6 @@ main.addEventListener("click", (e) => {
         autoFocus.select();
         prixEnvoye.textContent = prix.textContent;
         nomCommande.textContent = typeSuchi.textContent;
-        console.log(nomCommande.textContent);
         nomCommandeEnvoye.value = nomCommande.textContent;
         prixCommandeEnvoye.value = prixEnvoye.textContent + 'AR';
         commandeForm.style.display = "flex";
