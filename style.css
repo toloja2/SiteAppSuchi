@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #F5EFEF;
+    background-color:rgba(53, 56, 63, 0.897);
     font-family: 'Times New Roman', Times, sans-serif;
 }
 
@@ -19,7 +19,8 @@ form {
     padding: 10%;
     margin: 6% 10%;
     border-radius: 20px;
-    background-color: rgba(200, 175, 135, 1);
+    background-color: rgba(20, 20, 20, 0.5);
+    box-shadow:0 0 4px 4px rgba(151, 135, 111, 0.5);
 }
 
 h1 {
@@ -217,7 +218,7 @@ section:hover {
 /* PAYMENT*/
 #payement {
     width: 100%;
-    background-color: #39288749;
+    background-color: rgba(204, 200, 223, 0.286);
     padding: 5px;
     border: none;
     border-radius: 5px;
@@ -235,7 +236,7 @@ footer {
     gap: 10px;
     padding: 5px;
     color: white;
-    background-color: rgba(142, 117, 109, 0.95);
+    background-color: rgba(142, 117, 109, 0.986);
 }
 
 footer li {
@@ -252,7 +253,7 @@ footer li {
     align-items: center;
     border-radius: 6px;
     padding: 5px;
-    background-color: rgba(142, 117, 109, 0.7);
+    background-color: rgba(142, 117, 109, 0.205)
 }
 
 .socialMedias div {
