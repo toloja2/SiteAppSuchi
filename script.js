@@ -71,7 +71,7 @@ function ajoutProduit(imageProduit, titreProduit, descriptionProduit, prixProdui
     btn.textContent = "COMMANDER";
     section.appendChild(div);
     section.appendChild(titre);
-    section.appendChild(desciptionProduit);
+    section.appendChild(desctiption);
     section.appendChild(prixProduitContent);
     section.appendChild(btn);
     service.appendChild(section);
